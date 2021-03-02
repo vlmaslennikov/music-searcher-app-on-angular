@@ -1,0 +1,15 @@
+<div class="header">
+  <div>
+    <input #artist   type="text" placeholder=" Artist...">
+    <button  (click)="searchArtist(artist)" >search albums</button>
+  </div>
+  <h1> {{'#'+ name}}</h1>
+</div>
+<div class="blockContainer">
+  <div class="block">
+    <app-deezer-component [artistName]='name'></app-deezer-component>
+  </div>
+  <div class="block">
+    <app-itunes-component [artistName]='name'></app-itunes-component>
+  </div>
+</div>

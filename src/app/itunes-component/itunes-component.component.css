@@ -1,0 +1,46 @@
+.cardAlbum{
+  width:40vw;
+  display:flex;
+  flex-direction:column;
+  margin:10vh;
+  position:relative;
+  background: rgb(59, 58, 59);
+  color:floralwhite;
+  box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+  border :1px solid rgb(53, 52, 52);
+}
+.albumName{
+  max-height:10%;
+  padding:0;
+  margin:10px 0;
+  position:relative;
+  text-align:center;
+  font-size:1.2rem;
+}
+.aboutArtists{
+  max-height:80%;
+  max-width:40vw;
+  margin:5px 5px 5px 30px;
+  display:flex;
+  flex-direction:row;
+  position:relative;
+}
+.link{
+  max-height:10%;
+  padding:0;
+  margin:5px 15px 5px 5px;
+  position:relative;
+  text-align:center;
+}
+img{
+  width:120px;
+  height:120px;
+  margin:10px 60px 10px 10px;
+  box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+table{
+  position:relative;
+}
+.title{
+  font-size:2rem;
+}

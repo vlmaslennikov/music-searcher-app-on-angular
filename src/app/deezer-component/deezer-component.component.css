@@ -1,0 +1,42 @@
+.cardAlbum{
+  width:50vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:10vh;
+  position:relative;
+  background-color: rgb(39, 38, 38);
+  color: aliceblue;
+  font-weight: bold;
+  box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+}
+.albumName{
+  max-height:10%;
+  padding:0;
+  margin:10px 0;
+  position:relative;
+  text-align:center;
+}
+.demoTracks{
+  width:100%;
+  margin:0 auto;
+}
+.link{
+  max-height:10%;
+  padding:0;
+  margin:5px 15px 5px 5px;
+  position:relative;
+  text-align:right;
+}
+img{
+  width:100%;
+  height:80%;;
+}
+p{
+  padding:0;
+
+}
+table{
+ text-align: right;
+ float: right;
+}

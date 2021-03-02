@@ -1,0 +1,7 @@
+<button  (click)="loadTrackList(tracks)" >Demo tracklist</button>
+<div *ngIf="view" class="tracklist">
+  <div class="" *ngFor= "let track of trackList.data">
+    <p>{{track.title}}</p>
+    <audio src={{track.preview}} controls></audio>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+  <div  *ngFor="let alb of user.data" class="cardAlbum">
+    <div class="aboutArtists"  >
+      <img src={{alb.cover_big}} alt="album cover">
+      <table>
+        <tr>
+          <td colspan=2>{{alb.artist.name}}</td>
+        </tr>
+        <tr>
+          <td colspan=2>{{alb.title}}</td>
+        </tr>
+        <tr>
+          <td>Songs : </td>
+          <td>{{alb.nb_tracks}}</td>
+        </tr>
+      </table>
+    </div>
+    <div  class="demoTracks"  >
+      <app-album [tracks]="alb.tracklist"></app-album>
+    </div>
+    <div class="link">
+      <a href={{alb.link}}>Listen on Deezer</a>
+    </div>
+  </div>

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{font-family:'Roboto', sans-serif;}
+
+a{
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+}
+a:hover{
+ color: rgba(245, 128, 128, 0.63);
+}
+table{
+  color:rgb(197, 190, 148);
+  font-size: 0.75rem;
+}
