@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule }   from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { AlbumComponent } from './deezer-component/album/album.component';
+import { TracklistComponent } from './deezer-component/tracklist/tracklist.component';
 import { DeezerComponentComponent } from './deezer-component/deezer-component.component';
 import { ItunesComponentComponent } from './itunes-component/itunes-component.component';
 
@@ -12,7 +12,7 @@ import { ItunesComponentComponent } from './itunes-component/itunes-component.co
 @NgModule({
   declarations: [
     AppComponent,
-    AlbumComponent,
+    TracklistComponent,
     DeezerComponentComponent,
     ItunesComponentComponent,
   ],

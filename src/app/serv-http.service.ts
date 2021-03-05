@@ -8,3 +8,4 @@ export class ServHttpService {
     return this.http.get(link)
   }
 }
+

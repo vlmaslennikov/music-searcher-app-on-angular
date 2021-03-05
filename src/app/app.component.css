@@ -43,3 +43,6 @@ button{
   color: rgb(219, 221, 223);
   font-weight: bold;
 }
+button:hover{
+  background-color: rgb(50, 69, 69);
+}

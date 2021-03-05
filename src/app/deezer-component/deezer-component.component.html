@@ -1,23 +1,23 @@
-  <div  *ngFor="let alb of user.data" class="cardAlbum">
+  <div  *ngFor="let album of albums.data" class="cardAlbum">
     <div class="aboutArtists"  >
-      <img src={{alb.cover_big}} alt="album cover">
+      <img src={{album.cover_big}} alt="album cover">
       <table>
         <tr>
-          <td colspan=2>{{alb.artist.name}}</td>
+          <td colspan=2>{{album.artist.name}}</td>
         </tr>
         <tr>
-          <td colspan=2>{{alb.title}}</td>
+          <td colspan=2>{{album.title}}</td>
         </tr>
         <tr>
           <td>Songs : </td>
-          <td>{{alb.nb_tracks}}</td>
+          <td>{{album.nb_tracks}}</td>
         </tr>
       </table>
     </div>
     <div  class="demoTracks"  >
-      <app-album [tracks]="alb.tracklist"></app-album>
+      <tracklist-comp [tracks]="album.tracklist"></tracklist-comp>
     </div>
     <div class="link">
-      <a href={{alb.link}}>Listen on Deezer</a>
+      <a href={{album.link}}>Listen on Deezer</a>
     </div>
   </div>

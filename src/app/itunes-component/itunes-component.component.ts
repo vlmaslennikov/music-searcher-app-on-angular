@@ -9,13 +9,13 @@ import {ServHttpService} from '../serv-http.service';
 })
 export class ItunesComponentComponent implements OnChanges {
 
-  user:any={};
+  albums:any={};
   @Input()artistName!:string;
   constructor(private httpService: ServHttpService){}
 
   ngOnChanges(){
-      this.httpService.getData("https://itunes.apple.com/search?term="+this.artistName+"&entity=album").subscribe(data => {this.user=data;
-        console.log(this.user);});
+      this.httpService.getData("https://itunes.apple.com/search?term="+this.artistName+"&entity=album")
+      .subscribe(data => {this.albums=data;});
   }
 
 }
