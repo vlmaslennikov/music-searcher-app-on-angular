@@ -5,7 +5,7 @@ import {HttpClient} from '@angular/common/http';
 export class ServHttpService {
   constructor(private http : HttpClient){}
   getData(link:string){
-    return this.http.get(link)
-  }
+    return this.http.jsonp(link,'callback')
 }
 
+}

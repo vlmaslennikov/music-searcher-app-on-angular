@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule }   from '@angular/common/http';
+import { HttpClientModule, HttpClientJsonpModule}   from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TracklistComponent } from './deezer-component/tracklist/tracklist.component';
@@ -16,11 +16,11 @@ import { ItunesComponentComponent } from './itunes-component/itunes-component.co
     DeezerComponentComponent,
     ItunesComponentComponent,
   ],
-
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpClientJsonpModule,
   ],
   bootstrap: [AppComponent]
 })

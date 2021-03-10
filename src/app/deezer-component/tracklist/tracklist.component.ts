@@ -17,7 +17,7 @@ export class TracklistComponent {
   loadTrackList(list:any) {
     this.view=!this.view;
     if(this.view){
-      this.httpTracklist.getData("https://cors-anywhere.herokuapp.com/"+list)
+      this.httpTracklist.getData(list)
       .subscribe(data => {this.tracklist=data;});
     }
   }
