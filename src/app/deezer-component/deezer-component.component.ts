@@ -13,7 +13,7 @@ export class DeezerComponentComponent implements OnChanges {
 
   constructor(private httpService: ServHttpService){}
   ngOnChanges(){
-    this.httpService.getData("https://api.deezer.com/search/album?q="+this.artistName)
+    this.httpService.getData("https://api.deezer.com/search/album?q="+this.artistName+"&output=jsonp")
     .subscribe(data => {this.albums=data;});
   }
 

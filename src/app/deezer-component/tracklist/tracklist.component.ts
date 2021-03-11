@@ -17,7 +17,7 @@ export class TracklistComponent {
   loadTrackList(list:any) {
     this.view=!this.view;
     if(this.view){
-      this.httpTracklist.getData(list)
+      this.httpTracklist.getData(list+"&output=jsonp")
       .subscribe(data => {this.tracklist=data;});
     }
   }
